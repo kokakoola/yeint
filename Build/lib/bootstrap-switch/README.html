@@ -1,0 +1,202 @@
+<h1>Bootstrap-switch v.1.8</h1>
+
+<p>You can now also use radio buttons and checkboxes as switches.</p>
+
+<h2>Demos</h2>
+<p>Hurray! http://www.larentis.eu/switch/ moves to github pages and we are happy to tell you that we have bought a new domain: http://www.bootstrap-switch.org . Some troubles can occur so please, don’t hate us :’)</p>
+
+<p>http://bdmdesign.github.io/bootstrap-switch (uptodate)</p>
+
+<h2>Usage</h2>
+<p>Just include Twitter Bootstrap, jQuery, Bootstrap Switch CSS and Javascript
+``` html
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8;" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" />
+<link rel="stylesheet" href="bootstrap-switch.css" /></p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="bootstrap-switch.js"></script>
+<p>// master
+<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.7/bootstrap-switch.min.js">  // from cdnjs.com
+```</script></p>
+
+<h2>Less</h2>
+<p>If you want to use your bootstrap vars edit bootstrapSwitch.less and then compile the less file
+<code>bash
+lessc static/less/bootstrap-switch.less static/stylesheets/bootstrap-switch.css
+</code></p>
+
+<h2>Supported browsers</h2>
+<p>I’m not going to support ancient browsers! (it works on IE8+)</p>
+
+<h2>Basic Example</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch"&gt;
+    &lt;input type="checkbox"&gt;
+&lt;/div&gt;
+</code></p>
+
+<p>radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch"&gt;
+    &lt;input type="radio"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>Large, small or mini</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch switch-large"&gt;  &lt;!-- switch-large, switch-small or switch-mini --&gt;
+    &lt;input type="checkbox"&gt;
+&lt;/div&gt;
+</code></p>
+
+<p>radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch switch-large"&gt;  &lt;!-- switch-large, switch-small or switch-mini --&gt;
+    &lt;input type="radio"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>Colors</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-on="danger" data-off="warning"&gt;  &lt;!-- primary, info, success, warning, danger and default --&gt;
+    &lt;input type="checkbox"&gt;
+&lt;/div&gt;
+</code></p>
+
+<p>radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-on="danger" data-off="warning"&gt;  &lt;!-- primary, info, success, warning, danger and default --&gt;
+    &lt;input type="radio"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>Animation</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-animated="false"&gt;
+    &lt;input type="checkbox"&gt;
+&lt;/div&gt;
+</code></p>
+
+<p>radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-animated="false"&gt;
+    &lt;input type="radio"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>Text</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-on-label="SI" data-off-label="NO"&gt;
+    &lt;input type="checkbox"&gt;
+&lt;/div&gt;
+</code></p>
+
+<p>radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-on-label="SI" data-off-label="NO"&gt;
+    &lt;input type="radio"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>Text Label</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-text-label="My Slider Text"&gt;
+    &lt;input type="checkbox"&gt;
+&lt;/div&gt;
+</code></p>
+
+<p>radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-text-label="My Slider Text"&gt;
+    &lt;input type="radio"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>HTML Text</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-on-label="&lt;i class='icon-ok icon-white'&gt;&lt;/i&gt;" data-off-label="&lt;i class='icon-remove'&gt;&lt;/i&gt;"&gt;
+    &lt;input type="checkbox"&gt;
+&lt;/div&gt;
+</code></p>
+
+<p>radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch" data-on-label="&lt;i class='icon-ok icon-white'&gt;&lt;/i&gt;" data-off-label="&lt;i class='icon-remove'&gt;&lt;/i&gt;"&gt;
+    &lt;input type="radio"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>Initial values</h2>
+<p>checkboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch"&gt;
+    &lt;input type="checkbox" checked="checked" disabled="disabled"&gt;
+&lt;/div&gt;
+</code>
+radioboxes:</p>
+
+<p><code>html
+&lt;div class="make-switch"&gt;
+    &lt;input type="radio" checked="checked" disabled="disabled"&gt;
+&lt;/div&gt;
+</code></p>
+
+<h2>Event handler</h2>
+<p><code>javascript
+$('#mySwitch').on('switch-change', function (e, data) {
+    var $el = $(data.el)
+      , value = data.value;
+    console.log(e, $el, value);
+});
+</code></p>
+
+<h2>Methods</h2>
+<p><code>javascript
+$('#mySwitch').bootstrapSwitch('toggleActivation');
+$('#mySwitch').bootstrapSwitch('isActive');
+$('#mySwitch').bootstrapSwitch('setActive', false);
+$('#mySwitch').bootstrapSwitch('setActive', true);
+$('#mySwitch').bootstrapSwitch('toggleState');
+$('.mySwitch').bootstrapSwitch('toggleRadioState'); // the radiobuttons need a class not a ID, don't allow uncheck radio switch
+$('.mySwitch').bootstrapSwitch('toggleRadioStateAllowUncheck'); // don't allow uncheck radio switch
+$('.mySwitch').bootstrapSwitch('toggleRadioStateAllowUncheck', false); // don't allow uncheck radio switch
+$('.mySwitch').bootstrapSwitch('toggleRadioStateAllowUncheck', true); // allow uncheck radio switch
+$('#mySwitch').bootstrapSwitch('setState', true);
+$('#mySwitch').bootstrapSwitch('setState', true || false, true); // sets the state without getting the switch-change event
+$('#mySwitch').bootstrapSwitch('setOnLabel', onValue); // sets the text of the "on" label
+$('#mySwitch').bootstrapSwitch('setOffLabel', offValue); // sets the text of the "off" label
+$('#mySwitch').bootstrapSwitch('setOnClass', onClass); // sets the left color class
+$('#mySwitch').bootstrapSwitch('setOffClass', offClass); // sets the right color class
+$('#mySwitch').bootstrapSwitch('setAnimated', animated); // sets true or false for animation
+$('#mySwitch').bootstrapSwitch('setSizeClass', size); // sets 'switch-mini', 'switch-small' or 'switch-large'
+$('#mySwitch').bootstrapSwitch('status');  // returns true or false
+$('#mySwitch').bootstrapSwitch('destroy');
+</code></p>
+
+<h2>License</h2>
+<p>Licensed under the Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0</p>

@@ -1,0 +1,58 @@
+<h1>Chosen</h1>
+
+<p>Chosen is a library for making long, unwieldy select boxes more user friendly.</p>
+
+<ul>
+  <li>jQuery support: 1.4+</li>
+  <li>Prototype support: 1.7+</li>
+</ul>
+
+<p>For documentation, usage, and examples, see:<br />
+http://harvesthq.github.com/chosen</p>
+
+<h3>Contributing to Chosen</h3>
+
+<p>Contributions and pull requests are very welcome. Please follow these guidelines when submitting new code.</p>
+
+<ol>
+  <li>Make all changes in Coffeescript files, <strong>not</strong> JavaScript files.</li>
+  <li>For feature changes, update both jQuery <em>and</em> Prototype versions</li>
+  <li>Use <code>npm install -d</code> to install the correct development dependencies.</li>
+  <li>Use <code>cake build</code> or <code>cake watch</code> to generate Chosen’s JavaScript file and minified version.</li>
+  <li>Don’t touch the <code>VERSION</code> file</li>
+  <li>Submit a Pull Request using GitHub.</li>
+</ol>
+
+<h3>Using CoffeeScript &amp; Cake</h3>
+
+<p>First, make sure you have the proper CoffeeScript / Cake set-up in place. We have added a package.json that makes this easy:</p>
+
+<p><code>
+npm install -d
+</code></p>
+
+<p>This will install <code>coffee-script</code> and <code>uglifyjs</code>.</p>
+
+<p>Once you’re configured, building the JavasScript from the command line is easy:</p>
+
+<pre><code>cake build                # build Chosen from source
+cake watch                # watch coffee/ for changes and build Chosen
+</code></pre>
+
+<p>If you’re interested, you can find the recipes in Cakefile.</p>
+
+<h3>Chosen Credits</h3>
+
+<ul>
+  <li>Built by <a href="http://www.getharvest.com/">Harvest</a>. Want to work on projects like this? <a href="http://www.getharvest.com/careers">We’re hiring</a>!</li>
+  <li>Concept and development by <a href="http://www.patrickfiller.com/">Patrick Filler</a></li>
+  <li>Design and CSS by <a href="http://matthewlettini.com/">Matthew Lettini</a></li>
+</ul>
+
+<h3>Notable Forks</h3>
+
+<ul>
+  <li><a href="https://github.com/julesjanssen/chosen">Chosen for MooTools</a>, by Jules Janssen</li>
+  <li><a href="http://drupal.org/project/chosen">Chosen Drupal 7 Module</a>, by Pol Dell’Aiera, Arshad Chummun, Bart Feenstra, Kálmán Hosszu, etc.</li>
+  <li><a href="https://github.com/paulredmond/chosen-cakephp">Chosen CakePHP Plugin</a>, by Paul Redmond</li>
+</ul>

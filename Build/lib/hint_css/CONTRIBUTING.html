@@ -1,0 +1,50 @@
+<p><strong>Hint</strong> is written in <a href="http://sass-lang.com/">SASS</a>.</p>
+
+<h1>Setup</h1>
+<ol>
+  <li><a href="https://help.github.com/articles/fork-a-repo">Fork <strong>Hint.css</strong></a> and clone it on your system.</li>
+  <li>Create a new branch out off <code>master</code> for your fix/feature. <code>git checkout new-feature master</code></li>
+</ol>
+
+<h1>Building</h1>
+
+<p><strong>Hint.css</strong> uses <a href="http://gruntjs.com/">Grunt</a> for the build process which you need to have installed on your system.</p>
+
+<p>Also there are two additional Grunt tasks required to build the library:</p>
+
+<ol>
+  <li>
+    <p><a href="https://npmjs.org/package/grunt-contrib-mincss">grunt-contrib-mincss</a></p>
+  </li>
+  <li>
+    <p><a href="https://npmjs.org/package/grunt-sass">grunt-sass</a></p>
+  </li>
+</ol>
+
+<p>To install all the dependencies, run <code>npm install</code>.</p>
+
+<p>Once you have the dependencies installed, run <code>grunt</code> from the project directory. This will run the default grunt task which compiles the SCSS files into <code>hint.css</code> file.</p>
+
+<p>Though this should be sufficient for building the library for testing, in case you want to build the minified version as well you can run the <code>grunt deploy</code> command instead.</p>
+
+<h1>Things to remember</h1>
+<ul>
+  <li>
+    <p>Do not fix multiple issues in a single commit. Keep them one thing per commit so that they can be picked easily incase only few commits require to be merged.</p>
+  </li>
+  <li>
+    <p>For every new modifier (example <code>hint--success</code>, <code>hint--top</code>) added, make a separate file unless it fits into a current modifier file.</p>
+  </li>
+  <li>
+    <p>Before submitting a patch, rebase your branch on upstream <code>master</code> to make life easier for the merger.</p>
+  </li>
+  <li>
+    <p><strong>DO NOT</strong> add the library builds (<code>hint.css</code> &amp; <code>hint.min.css</code>) in your commits.</p>
+  </li>
+</ul>
+
+<h1>Stay in touch</h1>
+
+<p>To catch all updates and discussion, join the mailing list: <strong>hintcss@googlegroups.com</strong>.</p>
+
+<p>To subscribe: <strong>hintcss+subscribe@googlegroups.com</strong> or visit <a href="https://groups.google.com/forum/?fromgroups=#!forum/hintcss">here</a>.</p>

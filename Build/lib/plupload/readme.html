@@ -1,0 +1,40 @@
+<h1>Plupload - Cross browser and platform uploader API</h1>
+
+<h2>What is Plupload</h2>
+<p>Plupload is a JavaScript API for dealing with file uploads it supports features like multiple file selection, file type filtering,
+request chunking, client side image scaling and it uses different runtimes to achieve this such as HTML 5, Silverlight, Flash, Gears and BrowserPlus.</p>
+
+<h2>What you need to build Plupload</h2>
+<ul>
+  <li>Install the Java JDK or JRE packages you can find it at: <a href="http://java.sun.com/javase/downloads/index.jsp">http://java.sun.com/javase/downloads/index.jsp</a></li>
+  <li>Install Apache Ant you can find it at: <a href="http://ant.apache.org/">http://ant.apache.org/</a></li>
+  <li>Add Apache Ant to your systems path environment variable, this is not required but makes it easier to issue commands to Ant without having to type the full path for it.</li>
+</ul>
+
+<h2>How to build Plupload</h2>
+
+<p>In the root directory of Plupload where the build.xml file is you can run ant against different targets.</p>
+
+<p><code>ant</code></p>
+
+<p>Will combine, preprocess and minify the Plupload classes into the js directory. It will not build the Silverlight and Flash .xap and .swf files.</p>
+
+<p><code>ant moxiedoc</code></p>
+
+<p>Will generate API Documentation for the project using the Moxiedoc tool. The docs will be generated to the docs/api directory.</p>
+
+<p><code>ant release</code></p>
+
+<p>Will produce release packages. The release packages will be placed in the tmp directory.</p>
+
+<h2>How to build Flash runtime</h2>
+<p>The Flash runtime uses a .swf file that can be built using the Flex SDK. This SDK can be downloaded from Adobe. <a href="http://www.adobe.com/products/flex/flexdownloads/">http://www.adobe.com/products/flex/flexdownloads/</a></p>
+
+<h2>How to build Silverlight runtime</h2>
+<p>The Silverlight runtime uses a .xap file that can be built using the Silverlight SDK or Visual Studio. <a href="http://silverlight.net/getstarted/">http://silverlight.net/getstarted/</a></p>
+
+<h2>Running the development version</h2>
+<p>The unminified development version of the javascript files can be executed by opening the examples/queue_widget_dev.html file running on a Web Server.</p>
+
+<h2>Contributing to the Plupload project</h2>
+<p>You can read more about how to contribute to this project at <a href="http://www.plupload.com/contributing">http://www.plupload.com/contributing</a></p>
