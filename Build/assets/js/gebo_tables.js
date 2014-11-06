@@ -89,16 +89,17 @@
 			$('#dt_gal').dataTable({
 				"sDom": "<'row'<'col-sm-6'<'dt_actions'>l><'col-sm-6'f>r>t<'row'<'col-sm-5'i><'col-sm-7'p>>",
 				"sPaginationType": "bootstrap",
-                "aaSorting": [[ 2, "asc" ]],
+                "asSorting": [[ 0, "desc" ]],
 				"aoColumns": [
-					{ "bSortable": false },
-					{ "bSortable": false },
 					{ "sType": "string" },
-					{ "sType": "formatted-num" },
-					{ "sType": "eu_date" },
+					{ "sType": "string" },
+                    { "sType": "string" },
+					{ "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
 					{ "bSortable": false }
 				]
 			});
-           $('.dt_actions').html($('.dt_gal_actions').html());
+           // $('.dt_actions').html($('.dt_gal_actions').html());
         }
     };

@@ -1,0 +1,79 @@
+<!-- @include includes/_head -->
+
+<body class="full_width">
+	<div id="maincontainer" class="clearfix">
+
+		<!-- @include includes/_header -->
+
+		<div id="contentwrapper">
+			<div class="main_content">
+				<div id="jCrumbs" class="breadCrumb module">
+					<ul>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-home"></i></a>
+						</li>
+						<li>
+							<a href="#">Configuration</a>
+						</li>
+						<li>
+							Brands
+						</li>
+					</ul>
+				</div>					                    	
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<h1 class="heading">New Brand</h1>
+
+						<div class="action-buttons pull-right">
+							<a href="#" class="btn btn-success">Save</a>
+							<a href="#" class="btn btn-primary">Send to ERP</a>
+							<a href="#" class="btn btn-danger">Cancel</a>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<form action="">
+							<div class="formSep"></div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 col-md-6 form-divider">
+										<div class="form-group">
+											<label class="control-label" for="textinput1">Brand code <span class="red">*</span></label>  
+											<input id="textinput1" name="textinput" type="text" class="form-control input-md">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Brand name <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput3">Brand WEB link</label>  
+											<div class="input-group input-group-sm">
+												<input class="form-control" type="text" id="textinput3">
+												<div class="input-group-btn"><button type="button" class="btn btn-default">GO</button></div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Synonym</label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md" placeholder="Start typing a brand">
+										</div>
+										<div class="form-group">
+											<label>Notes</label>
+											<textarea name="txtarea_sp" id="txtarea_sp" cols="10" rows="3" class="form-control"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>                
+			</div>
+		</div>
+
+		<!-- @include includes/_sidebar -->
+
+		<!-- @include includes/_js -->		
+	</div>
+</body>
+</html>

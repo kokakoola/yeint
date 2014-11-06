@@ -7336,6 +7336,25 @@ h3 {
 td.invoice_tar, th.invoice_tar {
   text-align: right; }
 
+table tbody tr.add-row td {
+  background-color: #ebf2f6 !important; }
+
+.action-buttons {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.sidebar .panel .current a {
+  color: #fff; }
+
+.nav-pills > li.current > a {
+  background-color: #428bca; }
+
+.red {
+  color: red; }
+
+.form-divider {
+  border-right: 1px dashed gainsboro; }
+
 /* media queries */
 @media (min-width: 980px) {
   .sidebar {
