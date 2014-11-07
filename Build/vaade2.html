@@ -75,7 +75,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="current brand pull-left" href="index.html"><img src="img/big-logo.png" alt="Logo"></a>
+				<a class="brand pull-left" href="index.html"><img src="img/big-logo.png" alt="Logo"></a>
 				<ul class="nav navbar-nav user_menu pull-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle nav_condensed" data-toggle="dropdown"><i class="flag-gb"></i> <b class="caret"></b></a>
@@ -120,11 +120,18 @@
 				</div>					                    	
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
-						<h1 class="heading">Brands</h1>
+						<h1 class="heading">Brands (superuser)</h1>
 						
 						<div class="action-buttons">
 							<a href="vaade4.html" class="btn btn-primary pull-right">Brands in local ERP</a>
-							<a href="vaade5.html" class="btn btn-default pull-right margin-right-10">New</a>
+							<a href="vaade5.html" class="btn btn-default margin-right-10 pull-right">New</a>
+							<div class="col-md-2 pull-right">
+								<select name="" id="erp-select" class="form-control">
+									<option value="">ESTONIA</option>
+									<option value="">US & A</option>
+								</select>
+							</div>
+							<label for="erp-select" class="pull-right">Select ERP:</label>
 							<div class="clearfix"></div>
 						</div>
 
@@ -164,7 +171,7 @@
 									<td>ANALOG</td>
 									<td></td>
 									<td>Synonym</td>
-									<td class="text-center"><button class="btn btn-primary btn-sm">Add to local ERP</button></td>
+									<td class="text-center"><button class="btn btn-primary btn-sm">Add to selected ERP</button></td>
 									<td class="text-center"><a href="vaade3.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
 								</tr>
 								<tr>
@@ -264,8 +271,8 @@
 					<div class="accordion-body collapse in" id="collapseFive">
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
-								<li class='current'><a class='current' href="index.html">Brands</a></li>
-								<li><a href="vaade2.html">Brands (superuser)</a></li>
+								<li><a href="index.html">Brands</a></li>
+								<li class='current'><a class='current' href="vaade2.html">Brands (superuser)</a></li>
 								<li><a href="vaade4.html">Brands in local ERP</a></li>
 								<li><a href="vaade5.html">New Brand</a></li>
 								<li><a href="vaade3.html">Edit Brand</a></li>
