@@ -114,6 +114,54 @@
                     { "bSortable": false }
                 ]
             });
+
+            $('#dt_gal_suppliers_all').dataTable({
+                "sDom": "<'row'<'col-sm-6'<'dt_actions'>l><'col-sm-6'f>r>t<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                "sPaginationType": "bootstrap",
+                "asSorting": [[ 0, "desc" ]],
+                "aoColumns": [
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "bSortable": false }
+                ]
+            });
+
+            $('#dt_gal_products').dataTable({
+                "sDom": "<'row'<'col-sm-6'<'dt_actions'>l><'col-sm-6'f>r>t<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                "sPaginationType": "bootstrap",
+                "asSorting": [[ 0, "desc" ]],
+                "aoColumns": [
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "bSortable": false }
+                ]
+            });
+
+            $('#dt_gal_products_superuser').dataTable({
+                "sDom": "<'row'<'col-sm-6'<'dt_actions'>l><'col-sm-6'f>r>t<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                "sPaginationType": "bootstrap",
+                "asSorting": [[ 0, "desc" ]],
+                "aoColumns": [
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "sType": "string" },
+                    { "bSortable": false }
+                ]
+            });
            // $('.dt_actions').html($('.dt_gal_actions').html());
         }
     };

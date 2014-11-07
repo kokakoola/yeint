@@ -116,13 +116,13 @@
 							<a href="#">Configuration</a>
 						</li>
 						<li>
-							New supplier
+							New product group
 						</li>
 					</ul>
 				</div>					                    	
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
-						<h1 class="heading">New supplier</h1>
+						<h1 class="heading">New product group</h1>
 
 						<div class="action-buttons pull-right">
 							<a data-toggle="modal" href="#confirmModal" data-backdrop="static" class="btn btn-success">Save</a>
@@ -135,30 +135,28 @@
 							<div class="formSep"></div>
 							<div class="formSep">
 								<div class="row">
-									<div class="col-sm-6 col-md-6">
-										<div class="form-group">
-											<label for=""><strong>Search from existing suppliers in other ERPs:</strong></label>
-											<input type="text" class="form-control" placeholder="Start typing a supplier name">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="formSep">
-								<div class="row">
 									<div class="col-sm-6 col-md-6 form-divider">
 										<div class="form-group">
-											<label class="control-label" for="textinput1">Supplier name <span class="red">*</span></label>  
+											<label class="control-label" for="textinput1">YE product group ID</label>  
 											<input id="textinput1" name="textinput" type="text" class="form-control input-md">
 										</div>
 										<div class="form-group">
-											<label class="control-label" for="textinput2">Supplier local name <span class="red">*</span></label>  
+											<label class="control-label" for="textinput2">Product group name <span class="red">*</span></label>  
 											<input id="textinput2" name="textinput" type="text" class="form-control input-md">
 										</div>
 									</div>
 									<div class="col-sm-6 col-md-6">
 										<div class="form-group">
-											<label class="control-label" for="textinput2">Supplier code <span class="red">*</span></label>  
-											<input id="textinput2" name="textinput" type="text" class="form-control input-md">
+											<input type="checkbox" id="checkbox-input" class="disable-inputs">
+											<label for="checkbox-input" class="disable-inputs">Send product group information to ERP</label>
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput3">Local product group ID</label>
+											<input id="textinput3" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput4">Local product group name</label>
+											<input id="textinput4" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
 										</div>
 									</div>
 								</div>
@@ -171,13 +169,13 @@
 								<div class="modal-content">
 									<div class="modal-header">
 										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-										<h4 class="modal-title" id="myModalLabel">Supplier exists</h4>
+										<h4 class="modal-title" id="myModalLabel">Send product group info to ERP</h4>
 									</div>
 									<div class="modal-body text-center">
-										<p>Supplier with the inserted name alreay existis in YEMB.</p>
-										<p>Would you like to change supplier name or use existing supplier?</p>
-										<a href="suppliers_vaade1.html" class="btn btn-default">Change supplier name</a>
-										<a href="suppliers_vaade1.html" class="btn btn-default">Use existing supplier</a>
+										<p>Saving the product group will send the information to your local ERP</p>
+										<p>Would you like to continue?</p>
+										<a href="productgroups_vaade1.html" class="btn btn-default">Continue</a>
+										<a data-dismiss="modal" class="btn btn-link">Cancel</a>
 									</div>
 								</div>
 							</div>
@@ -251,12 +249,12 @@
 								<li class="nav-header">Suppliers</li>
 								<li><a href="suppliers_vaade1.html">Local suppliers</a></li>
 								<li><a href="suppliers_vaade2.html">All suppliers</a></li>
-								<li class='current'><a class='current' href="suppliers_vaade3.html">New supplier</a></li>
+								<li><a href="suppliers_vaade3.html">New supplier</a></li>
 								<li><a href="suppliers_vaade5.html">Edit supplier</a></li>
 								<li class="nav-header">Product groups</li>
 								<li><a href="productgroups_vaade1.html">Product groups</a></li>
 								<li><a href="productgroups_vaade2.html">Product groups (superuser)</a></li>
-								<li><a href="productgroups_vaade3.html">New product groups</a></li>
+								<li class='current'><a class='current' href="productgroups_vaade3.html">New product groups</a></li>
 								<li><a href="productgroups_vaade6.html">New product groups (superuser)</a></li>
 								<li><a href="productgroups_vaade9.html">Edit product groups</a></li>
 								<li><a href="productgroups_vaade10.html">Edit product groups (superuser)</a></li>
@@ -311,7 +309,8 @@
 <script src="assets/js/selectNav.js"></script>
 
 <!-- common functions -->
-<script src="assets/js/gebo_common.js"></script>		
+<script src="assets/js/gebo_common.js"></script>
+				
 	</div>
 </body>
 </html>

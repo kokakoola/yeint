@@ -1,0 +1,78 @@
+<!-- @include includes/_head -->
+
+<body class="full_width">
+	<div id="maincontainer" class="clearfix">
+
+		<!-- @include includes/_header -->
+
+		<div id="contentwrapper">
+			<div class="main_content">
+				<div id="jCrumbs" class="breadCrumb module">
+					<ul>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-home"></i></a>
+						</li>
+						<li>
+							<a href="#">Configuration</a>
+						</li>
+						<li>
+							Edit product group
+						</li>
+					</ul>
+				</div>					                    	
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<h1 class="heading">Edit product group</h1>
+
+						<div class="action-buttons pull-right">
+							<a href="javascript:history.go(-1);" class="btn btn-success">Save</a>
+							<a href="javascript:history.go(-1);" class="btn btn-danger">Delete</a>
+							<a href="javascript:history.go(-1);" class="btn btn-link">Cancel</a>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<form action="">
+							<div class="formSep"></div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 col-md-6 form-divider">
+										<div class="form-group">
+											<label class="control-label" for="textinput1">YE product group ID</label>  
+											<input id="textinput1" name="textinput" type="text" class="form-control input-md" value="CG413">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Product group name <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md" value="Solid State Drives">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="checkbox" id="checkbox-input" class="disable-inputs" checked="checked">
+											<label for="checkbox-input" class="disable-inputs">Send product group information to ERP</label>
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput3">Local product group ID</label>
+											<input id="textinput3" name="textinput" type="text" class="form-control input-md is-disabled" value="CG413">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput4">Local product group name</label>
+											<input id="textinput4" name="textinput" type="text" class="form-control input-md is-disabled" value="Pooljuhtketas">
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>                
+			</div>
+		</div>
+
+		<!-- @include includes/_sidebar -->
+
+		<!-- @include includes/_js -->
+
+	</div>
+</body>
+</html>

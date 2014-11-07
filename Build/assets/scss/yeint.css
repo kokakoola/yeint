@@ -7683,6 +7683,9 @@ table tbody tr.add-row td {
 .margin-right-10 {
   margin-right: 10px; }
 
+label {
+  display: inline-block; }
+
 /* media queries */
 @media (min-width: 980px) {
   .sidebar {

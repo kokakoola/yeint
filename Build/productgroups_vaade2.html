@@ -116,72 +116,104 @@
 							<a href="#">Configuration</a>
 						</li>
 						<li>
-							New supplier
+							Product groups (superuser)
 						</li>
 					</ul>
 				</div>					                    	
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
-						<h1 class="heading">New supplier</h1>
-
-						<div class="action-buttons pull-right">
-							<a data-toggle="modal" href="#confirmModal" data-backdrop="static" class="btn btn-success">Save</a>
-							<a href="javascript:history.go(-1);" class="btn btn-link">Cancel</a>
+						<h1 class="heading">Product groups (superuser)</h1>
+						
+						<div class="action-buttons">
+							<a href="productgroups_vaade6.html" class="btn btn-default pull-right margin-right-10">New</a>
+							<div class="clearfix"></div>
 						</div>
 
-						<div class="clearfix"></div>
+						<table class="table table-bordered table-striped table_vam" id="dt_gal_products_superuser">
+							<thead>
+								<tr>
+									<th>YE Product group ID</th>
+									<th>Name</th>
+									<th>FIN ERP ID</th>
+									<th>FIN ERP name</th>
+									<th>EST ERP ID</th>
+									<th>EST ERP name</th>
+									<th>LT ERP ID</th>
+									<th>LT ERP name</th>
+									<th>LV ERP ID</th>
+									<th>LV ERP name</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="add-row">
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>AA001</td>
+									<td>1 GB Accessories</td>
+									<td></td>
+									<td></td>
+									<td>1 GB</td>
+									<td>1 GB seade</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="productgroups_vaade10.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>AA002</td>
+									<td>Rack Assemblies</td>
+									<td></td>
+									<td></td>
+									<td>RAKI_LISA</td>
+									<td>Racki lisad</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="productgroups_vaade10.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>AA003</td>
+									<td>Capacitors SMD 0402</td>
+									<td>N212</td>
+									<td>MLCC 0402</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="productgroups_vaade10.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>AA004</td>
+									<td>Low price cable</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td>N213</td>
+									<td>MLCC 0603</td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="productgroups_vaade10.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+							</tbody>
+						</table>
 
-						<form action="">
-							<div class="formSep"></div>
-							<div class="formSep">
-								<div class="row">
-									<div class="col-sm-6 col-md-6">
-										<div class="form-group">
-											<label for=""><strong>Search from existing suppliers in other ERPs:</strong></label>
-											<input type="text" class="form-control" placeholder="Start typing a supplier name">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="formSep">
-								<div class="row">
-									<div class="col-sm-6 col-md-6 form-divider">
-										<div class="form-group">
-											<label class="control-label" for="textinput1">Supplier name <span class="red">*</span></label>  
-											<input id="textinput1" name="textinput" type="text" class="form-control input-md">
-										</div>
-										<div class="form-group">
-											<label class="control-label" for="textinput2">Supplier local name <span class="red">*</span></label>  
-											<input id="textinput2" name="textinput" type="text" class="form-control input-md">
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-6">
-										<div class="form-group">
-											<label class="control-label" for="textinput2">Supplier code <span class="red">*</span></label>  
-											<input id="textinput2" name="textinput" type="text" class="form-control input-md">
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-
-						<!-- Modal -->
-						<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-										<h4 class="modal-title" id="myModalLabel">Supplier exists</h4>
-									</div>
-									<div class="modal-body text-center">
-										<p>Supplier with the inserted name alreay existis in YEMB.</p>
-										<p>Would you like to change supplier name or use existing supplier?</p>
-										<a href="suppliers_vaade1.html" class="btn btn-default">Change supplier name</a>
-										<a href="suppliers_vaade1.html" class="btn btn-default">Use existing supplier</a>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>                
 			</div>
@@ -251,11 +283,11 @@
 								<li class="nav-header">Suppliers</li>
 								<li><a href="suppliers_vaade1.html">Local suppliers</a></li>
 								<li><a href="suppliers_vaade2.html">All suppliers</a></li>
-								<li class='current'><a class='current' href="suppliers_vaade3.html">New supplier</a></li>
+								<li><a href="suppliers_vaade3.html">New supplier</a></li>
 								<li><a href="suppliers_vaade5.html">Edit supplier</a></li>
 								<li class="nav-header">Product groups</li>
 								<li><a href="productgroups_vaade1.html">Product groups</a></li>
-								<li><a href="productgroups_vaade2.html">Product groups (superuser)</a></li>
+								<li class='current'><a class='current' href="productgroups_vaade2.html">Product groups (superuser)</a></li>
 								<li><a href="productgroups_vaade3.html">New product groups</a></li>
 								<li><a href="productgroups_vaade6.html">New product groups (superuser)</a></li>
 								<li><a href="productgroups_vaade9.html">Edit product groups</a></li>
@@ -311,7 +343,16 @@
 <script src="assets/js/selectNav.js"></script>
 
 <!-- common functions -->
-<script src="assets/js/gebo_common.js"></script>		
+<script src="assets/js/gebo_common.js"></script>	
+
+		<!-- datatable -->
+		<script src="lib/datatables/jquery.dataTables.min.js"></script>
+		<!-- additional sorting for datatables -->
+		<script src="lib/datatables/jquery.dataTables.sorting.js"></script>
+		<!-- datatables bootstrap integration -->
+		<script src="lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
+		<!-- tables functions -->
+		<script src="assets/js/gebo_tables.js"></script>	
 	</div>
 </body>
 </html>

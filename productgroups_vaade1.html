@@ -1,0 +1,100 @@
+<!-- @include includes/_head -->
+
+<body class="full_width">
+	<div id="maincontainer" class="clearfix">
+
+		<!-- @include includes/_header -->
+
+		<div id="contentwrapper">
+			<div class="main_content">
+				<div id="jCrumbs" class="breadCrumb module">
+					<ul>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-home"></i></a>
+						</li>
+						<li>
+							<a href="#">Configuration</a>
+						</li>
+						<li>
+							Product groups
+						</li>
+					</ul>
+				</div>					                    	
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<h1 class="heading">Product groups</h1>
+						
+						<div class="action-buttons">
+							<a href="productgroups_vaade3.html" class="btn btn-default pull-right margin-right-10">New</a>
+							<div class="clearfix"></div>
+						</div>
+
+						<table class="table table-bordered table-striped table_vam" id="dt_gal_products">
+							<thead>
+								<tr>
+									<th>YE Product group ID</th>
+									<th>Name</th>
+									<th>ERP Product group ID</th>
+									<th>ERP Product group name</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="add-row">
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>AA001</td>
+									<td>1 GB Accessories</td>
+									<td>1 GB</td>
+									<td>1 GB seade</td>
+									<td class="text-center"><a href="productgroups_vaade9.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>AA002</td>
+									<td>Rack Assemblies</td>
+									<td>RAKI_LISA</td>
+									<td>Racki lisad</td>
+									<td class="text-center"><a href="productgroups_vaade9.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>AA003</td>
+									<td>Capacitors SMD 0402</td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="productgroups_vaade9.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>AA004</td>
+									<td>Low price cable</td>
+									<td>SOODNEKAABEL</td>
+									<td>Soodne kaabel</td>
+									<td class="text-center"><a href="productgroups_vaade9.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>                
+			</div>
+		</div>
+
+		<!-- @include includes/_sidebar -->
+
+		<!-- @include includes/_js -->	
+
+		<!-- datatable -->
+		<script src="lib/datatables/jquery.dataTables.min.js"></script>
+		<!-- additional sorting for datatables -->
+		<script src="lib/datatables/jquery.dataTables.sorting.js"></script>
+		<!-- datatables bootstrap integration -->
+		<script src="lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
+		<!-- tables functions -->
+		<script src="assets/js/gebo_tables.js"></script>	
+	</div>
+</body>
+</html>

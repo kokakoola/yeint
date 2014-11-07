@@ -1,0 +1,185 @@
+<!-- @include includes/_head -->
+
+<body class="full_width">
+	<div id="maincontainer" class="clearfix">
+
+		<!-- @include includes/_header -->
+
+		<div id="contentwrapper">
+			<div class="main_content">
+				<div id="jCrumbs" class="breadCrumb module">
+					<ul>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-home"></i></a>
+						</li>
+						<li>
+							<a href="#">Configuration</a>
+						</li>
+						<li>
+							New product group (superuser)
+						</li>
+					</ul>
+				</div>					                    	
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<h1 class="heading">New product group (superuser)</h1>
+
+						<div class="action-buttons pull-right">
+							<a data-toggle="modal" href="#confirmModal" data-backdrop="static" class="btn btn-success">Save</a>
+							<a href="javascript:history.go(-1);" class="btn btn-link">Cancel</a>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<form action="">
+							<div class="formSep"></div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 col-md-6 form-divider">
+										<div class="form-group">
+											<label class="control-label" for="textinput1">YE product group ID</label>  
+											<input id="textinput1" name="textinput" type="text" class="form-control input-md">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Product group name <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<strong>Local ERPs</strong>
+										<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingOne">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+															Findland
+														</a>
+													</h4>
+												</div>
+												<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+													<div class="panel-body">
+														<div class="form-group">
+															<input type="checkbox" id="checkbox-input" class="disable-inputs">
+															<label for="checkbox-input" class="disable-inputs">Send product group information to ERP</label>
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput3">Local product group ID</label>
+															<input id="textinput3" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput4">Local product group name</label>
+															<input id="textinput4" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingTwo">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+															Estonia
+														</a>
+													</h4>
+												</div>
+												<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+													<div class="panel-body">
+														<div class="form-group">
+															<input type="checkbox" id="checkbox-input1" class="disable-inputs">
+															<label for="checkbox-input1" class="disable-inputs">Send product group information to ERP</label>
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput3">Local product group ID</label>
+															<input id="textinput3" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput4">Local product group name</label>
+															<input id="textinput4" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+															Lithuania
+														</a>
+													</h4>
+												</div>
+												<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+													<div class="panel-body">
+														<div class="form-group">
+															<input type="checkbox" id="checkbox-input2" class="disable-inputs">
+															<label for="checkbox-input2" class="disable-inputs">Send product group information to ERP</label>
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput3">Local product group ID</label>
+															<input id="textinput3" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput4">Local product group name</label>
+															<input id="textinput4" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+															Latvia
+														</a>
+													</h4>
+												</div>
+												<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+													<div class="panel-body">
+														<div class="form-group">
+															<input type="checkbox" id="checkbox-input3" class="disable-inputs">
+															<label for="checkbox-input3" class="disable-inputs">Send product group information to ERP</label>
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput3">Local product group ID</label>
+															<input id="textinput3" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+														<div class="form-group">
+															<label class="control-label" for="textinput4">Local product group name</label>
+															<input id="textinput4" name="textinput" type="text" class="form-control input-md is-disabled" disabled="disabled">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+
+						<!-- Modal -->
+						<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+										<h4 class="modal-title" id="myModalLabel">Send product group info to ERP</h4>
+									</div>
+									<div class="modal-body text-center">
+										<p>Saving the product group will send the information to your local ERP</p>
+										<p>Would you like to continue?</p>
+										<a href="productgroups_vaade2.html" class="btn btn-default">Continue</a>
+										<a data-dismiss="modal" class="btn btn-link">Cancel</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>                
+			</div>
+		</div>
+
+		<!-- @include includes/_sidebar -->
+
+		<!-- @include includes/_js -->
+
+	</div>
+</body>
+</html>
