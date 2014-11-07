@@ -116,32 +116,34 @@
 							<a href="#">Configuration</a>
 						</li>
 						<li>
-							<a href="index.html">Brands</a>
+							<a href="#">Suppliers</a>
 						</li>
 						<li>
-							Brands in local ERP
+							All suppliers
 						</li>
 					</ul>
 				</div>					                    	
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
-						<h1 class="heading">Brands</h1>
-						
+						<h1 class="heading">All suppliers</h1>
+
 						<div class="action-buttons">
-							<a href="index.html" class="btn btn-primary pull-right">All brands in YEMB</a>
-							<a href="vaade5.html" class="btn btn-default pull-right margin-right-10">New</a>
+							<a href="suppliers_vaade1.html" class="btn btn-primary pull-right">Local suppliers</a>
+							<a href="suppliers_vaade3.html" class="btn btn-default pull-right margin-right-10">New</a>
 							<div class="clearfix"></div>
 						</div>
 
-						<table class="table table-bordered table-striped table_vam" id="dt_gal">
+						<table class="table table-bordered table-striped table_vam" id="dt_gal_suppliers">
 							<thead>
 								<tr>
-									<th>Brand Code</th>
-									<th>Name</th>
-									<th>Synonym</th>
-									<th>Brand Web Link</th>
+									<th>Ye supplier ID</th>
+									<th>Supplier name</th>
+									<th>FIN supplier code</th>
+									<th>EST supplier code</th>
+									<th>LT supplier code</th>
+									<th>LV supplier code</th>
 									<th>Notes</th>
-									<th colspan="2">Actions</th>
+									<th>Actions</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -150,30 +152,54 @@
 									<td><input type="text" class="form-control"></td>
 									<td><input type="text" class="form-control"></td>
 									<td><input type="text" class="form-control"></td>
-									<td></td>
-									<td></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
 									<td></td>
 								</tr>
 								<tr>
-									<td>ADCKRONE</td>
-									<td>ADC Krone</td>
-									<td>TYCO</td>
-									<td><a href="#">www.adckrone.com</a></td>
+									<td>ACD412</td>
+									<td>TAIYO YUDEN EUROBE GMBH</td>
 									<td></td>
-									<td class="text-center"></td>
-									<td class="text-center"><a href="vaade3.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+									<td>563454</td>
+									<td>12434</td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="suppliers_vaade5.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
 								</tr>
 								<tr>
-									<td>LOCTITE</td>
-									<td>Loctite</td>
-									<td>HENKEL</td>
-									<td><a href="#">www.henkel.com</a></td>
-									<td>Product brand</td>
-									<td class="text-center"></td>
-									<td class="text-center"><a href="vaade3.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+									<td>BBN114</td>
+									<td>TYCO ELECTRONICS LOGISTICS AG</td>
+									<td>452</td>
+									<td>234423</td>
+									<td>234232</td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="suppliers_vaade5.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>DFS152</td>
+									<td>RITTAL UAB</td>
+									<td>123</td>
+									<td>423423</td>
+									<td></td>
+									<td></td>
+									<td>4564556</td>
+									<td class="text-center"><a href="suppliers_vaade5.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>CAA241</td>
+									<td>DIGI-KEY</td>
+									<td></td>
+									<td>323423</td>
+									<td></td>
+									<td>4534534</td>
+									<td>3453453</td>
+									<td class="text-center"><a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a></td>
 								</tr>
 							</tbody>
 						</table>
+
 					</div>
 				</div>                
 			</div>
@@ -237,12 +263,12 @@
 								<li class="nav-header">Brands</li>
 								<li><a href="index.html">Brands</a></li>
 								<li><a href="vaade2.html">Brands (superuser)</a></li>
-								<li class='current'><a class='current' href="vaade4.html">Brands in local ERP</a></li>
+								<li><a href="vaade4.html">Brands in local ERP</a></li>
 								<li><a href="vaade5.html">New Brand</a></li>
 								<li><a href="vaade3.html">Edit Brand</a></li>
 								<li class="nav-header">Suppliers</li>
 								<li><a href="suppliers_vaade1.html">Local suppliers</a></li>
-								<li><a href="suppliers_vaade2.html">All suppliers</a></li>
+								<li class='current'><a class='current' href="suppliers_vaade2.html">All suppliers</a></li>
 								<li><a href="suppliers_vaade3.html">New supplier</a></li>
 								<li><a href="suppliers_vaade5.html">Edit supplier</a></li>
 								<li class="nav-header">Product groups</li>
@@ -297,7 +323,7 @@
 <script src="assets/js/selectNav.js"></script>
 
 <!-- common functions -->
-<script src="assets/js/gebo_common.js"></script>	
+<script src="assets/js/gebo_common.js"></script>
 
 		<!-- datatable -->
 		<script src="lib/datatables/jquery.dataTables.min.js"></script>
@@ -306,7 +332,7 @@
 		<!-- datatables bootstrap integration -->
 		<script src="lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
 		<!-- tables functions -->
-		<script src="assets/js/gebo_tables.js"></script>	
+		<script src="assets/js/gebo_tables.js"></script>			
 	</div>
 </body>
 </html>

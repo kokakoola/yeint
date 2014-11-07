@@ -116,64 +116,55 @@
 							<a href="#">Configuration</a>
 						</li>
 						<li>
-							<a href="index.html">Brands</a>
-						</li>
-						<li>
-							Brands in local ERP
+							Edit supplier
 						</li>
 					</ul>
 				</div>					                    	
 				<div class="row">
 					<div class="col-sm-12 col-md-12">
-						<h1 class="heading">Brands</h1>
-						
-						<div class="action-buttons">
-							<a href="index.html" class="btn btn-primary pull-right">All brands in YEMB</a>
-							<a href="vaade5.html" class="btn btn-default pull-right margin-right-10">New</a>
-							<div class="clearfix"></div>
+						<h1 class="heading">Edit supplier</h1>
+
+						<div class="action-buttons pull-right">
+							<a href="javascript:history.go(-1);" class="btn btn-success">Save</a>
+							<a href="#" class="btn btn-danger">Delete</a>
+							<a href="javascript:history.go(-1);" class="btn btn-link">Cancel</a>
 						</div>
 
-						<table class="table table-bordered table-striped table_vam" id="dt_gal">
-							<thead>
-								<tr>
-									<th>Brand Code</th>
-									<th>Name</th>
-									<th>Synonym</th>
-									<th>Brand Web Link</th>
-									<th>Notes</th>
-									<th colspan="2">Actions</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="add-row">
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>ADCKRONE</td>
-									<td>ADC Krone</td>
-									<td>TYCO</td>
-									<td><a href="#">www.adckrone.com</a></td>
-									<td></td>
-									<td class="text-center"></td>
-									<td class="text-center"><a href="vaade3.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
-								</tr>
-								<tr>
-									<td>LOCTITE</td>
-									<td>Loctite</td>
-									<td>HENKEL</td>
-									<td><a href="#">www.henkel.com</a></td>
-									<td>Product brand</td>
-									<td class="text-center"></td>
-									<td class="text-center"><a href="vaade3.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="clearfix"></div>
+
+						<form action="">
+							<div class="formSep"></div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label for=""><strong>Search from existing suppliers in other ERPs:</strong></label>
+											<input type="text" class="form-control" placeholder="Start typing a supplier name">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 col-md-6 form-divider">
+										<div class="form-group">
+											<label class="control-label" for="textinput1">Supplier name <span class="red">*</span></label>  
+											<input id="textinput1" name="textinput" type="text" class="form-control input-md" value="TYCO ELECTRONICS LOGISTICS AG">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Supplier local name <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md" value="TYCO ELEKTROONIKA">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Supplier code <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md" value="12401">
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>                
 			</div>
@@ -237,14 +228,14 @@
 								<li class="nav-header">Brands</li>
 								<li><a href="index.html">Brands</a></li>
 								<li><a href="vaade2.html">Brands (superuser)</a></li>
-								<li class='current'><a class='current' href="vaade4.html">Brands in local ERP</a></li>
+								<li><a href="vaade4.html">Brands in local ERP</a></li>
 								<li><a href="vaade5.html">New Brand</a></li>
 								<li><a href="vaade3.html">Edit Brand</a></li>
 								<li class="nav-header">Suppliers</li>
 								<li><a href="suppliers_vaade1.html">Local suppliers</a></li>
 								<li><a href="suppliers_vaade2.html">All suppliers</a></li>
 								<li><a href="suppliers_vaade3.html">New supplier</a></li>
-								<li><a href="suppliers_vaade5.html">Edit supplier</a></li>
+								<li class='current'><a class='current' href="suppliers_vaade5.html">Edit supplier</a></li>
 								<li class="nav-header">Product groups</li>
 							</ul>
 						</div>
@@ -297,16 +288,7 @@
 <script src="assets/js/selectNav.js"></script>
 
 <!-- common functions -->
-<script src="assets/js/gebo_common.js"></script>	
-
-		<!-- datatable -->
-		<script src="lib/datatables/jquery.dataTables.min.js"></script>
-		<!-- additional sorting for datatables -->
-		<script src="lib/datatables/jquery.dataTables.sorting.js"></script>
-		<!-- datatables bootstrap integration -->
-		<script src="lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
-		<!-- tables functions -->
-		<script src="assets/js/gebo_tables.js"></script>	
+<script src="assets/js/gebo_common.js"></script>		
 	</div>
 </body>
 </html>

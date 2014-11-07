@@ -1,0 +1,122 @@
+<!-- @include includes/_head -->
+
+<body class="full_width">
+	<div id="maincontainer" class="clearfix">
+
+		<!-- @include includes/_header -->
+
+		<div id="contentwrapper">
+			<div class="main_content">
+				<div id="jCrumbs" class="breadCrumb module">
+					<ul>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-home"></i></a>
+						</li>
+						<li>
+							<a href="#">Configuration</a>
+						</li>
+						<li>
+							<a href="#">Suppliers</a>
+						</li>
+						<li>
+							All suppliers
+						</li>
+					</ul>
+				</div>					                    	
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<h1 class="heading">All suppliers</h1>
+
+						<div class="action-buttons">
+							<a href="suppliers_vaade1.html" class="btn btn-primary pull-right">Local suppliers</a>
+							<a href="suppliers_vaade3.html" class="btn btn-default pull-right margin-right-10">New</a>
+							<div class="clearfix"></div>
+						</div>
+
+						<table class="table table-bordered table-striped table_vam" id="dt_gal_suppliers">
+							<thead>
+								<tr>
+									<th>Ye supplier ID</th>
+									<th>Supplier name</th>
+									<th>FIN supplier code</th>
+									<th>EST supplier code</th>
+									<th>LT supplier code</th>
+									<th>LV supplier code</th>
+									<th>Notes</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="add-row">
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td><input type="text" class="form-control"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>ACD412</td>
+									<td>TAIYO YUDEN EUROBE GMBH</td>
+									<td></td>
+									<td>563454</td>
+									<td>12434</td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="suppliers_vaade5.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>BBN114</td>
+									<td>TYCO ELECTRONICS LOGISTICS AG</td>
+									<td>452</td>
+									<td>234423</td>
+									<td>234232</td>
+									<td></td>
+									<td></td>
+									<td class="text-center"><a href="suppliers_vaade5.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>DFS152</td>
+									<td>RITTAL UAB</td>
+									<td>123</td>
+									<td>423423</td>
+									<td></td>
+									<td></td>
+									<td>4564556</td>
+									<td class="text-center"><a href="suppliers_vaade5.html" class="btn btn-default btn-sm"><i class="glyphicon glyphicon-pencil"></i></a></td>
+								</tr>
+								<tr>
+									<td>CAA241</td>
+									<td>DIGI-KEY</td>
+									<td></td>
+									<td>323423</td>
+									<td></td>
+									<td>4534534</td>
+									<td>3453453</td>
+									<td class="text-center"><a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a></td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>                
+			</div>
+		</div>
+
+		<!-- @include includes/_sidebar -->
+
+		<!-- @include includes/_js -->
+
+		<!-- datatable -->
+		<script src="lib/datatables/jquery.dataTables.min.js"></script>
+		<!-- additional sorting for datatables -->
+		<script src="lib/datatables/jquery.dataTables.sorting.js"></script>
+		<!-- datatables bootstrap integration -->
+		<script src="lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
+		<!-- tables functions -->
+		<script src="assets/js/gebo_tables.js"></script>			
+	</div>
+</body>
+</html>

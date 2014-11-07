@@ -1,0 +1,78 @@
+<!-- @include includes/_head -->
+
+<body class="full_width">
+	<div id="maincontainer" class="clearfix">
+
+		<!-- @include includes/_header -->
+
+		<div id="contentwrapper">
+			<div class="main_content">
+				<div id="jCrumbs" class="breadCrumb module">
+					<ul>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-home"></i></a>
+						</li>
+						<li>
+							<a href="#">Configuration</a>
+						</li>
+						<li>
+							Edit supplier
+						</li>
+					</ul>
+				</div>					                    	
+				<div class="row">
+					<div class="col-sm-12 col-md-12">
+						<h1 class="heading">Edit supplier</h1>
+
+						<div class="action-buttons pull-right">
+							<a href="javascript:history.go(-1);" class="btn btn-success">Save</a>
+							<a href="#" class="btn btn-danger">Delete</a>
+							<a href="javascript:history.go(-1);" class="btn btn-link">Cancel</a>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<form action="">
+							<div class="formSep"></div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label for=""><strong>Search from existing suppliers in other ERPs:</strong></label>
+											<input type="text" class="form-control" placeholder="Start typing a supplier name">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 col-md-6 form-divider">
+										<div class="form-group">
+											<label class="control-label" for="textinput1">Supplier name <span class="red">*</span></label>  
+											<input id="textinput1" name="textinput" type="text" class="form-control input-md" value="TYCO ELECTRONICS LOGISTICS AG">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Supplier local name <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md" value="TYCO ELEKTROONIKA">
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-6">
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Supplier code <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md" value="12401">
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>                
+			</div>
+		</div>
+
+		<!-- @include includes/_sidebar -->
+
+		<!-- @include includes/_js -->		
+	</div>
+</body>
+</html>
