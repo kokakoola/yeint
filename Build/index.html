@@ -21,6 +21,9 @@
 	<link rel="stylesheet" href="img/splashy/splashy.css" />
 	<!-- flags -->
 	<link rel="stylesheet" href="img/flags/flags.css" />	
+
+<!-- tag handler -->
+  <link rel="stylesheet" href="lib/tag_handler/css/jquery.taghandler.css" />
 	<!-- datatables -->
 	<link rel="stylesheet" href="lib/datatables/extras/TableTools/media/css/TableTools.css">
 	<!-- font-awesome -->
@@ -234,7 +237,7 @@
 								<li><a href="javascript:void(0)">Members</a></li>
 								<li><a href="javascript:void(0)">Members groups</a></li>
 								<li><a href="javascript:void(0)">Users</a></li>
-								<li><a href="javascript:void(0)">Users groups</a></li>
+								<li><a href="users_add.html">Add user</a></li>
 							</ul>
 
 						</div>
@@ -313,13 +316,109 @@
 <script src="lib/slimScroll/jquery.slimscroll.js"></script>
 <!-- fix for ios orientation change -->
 <script src="assets/js/ios-orientationchange-fix.js"></script>
+  <!-- tag handler -->
+<script src="lib/tag_handler/jquery.taghandler.min.js"></script>
 <!-- to top -->
 <script src="lib/UItoTop/jquery.ui.totop.min.js"></script>
 <!-- mobile nav -->
 <script src="assets/js/selectNav.js"></script>
 
 <!-- common functions -->
-<script src="assets/js/gebo_common.js"></script>	
+<script src="assets/js/gebo_common.js"></script>
+
+  <!-- datatable -->
+  <script src="lib/datatables/jquery.dataTables.min.js"></script>
+  <!-- additional sorting for datatables -->
+    <script src="lib/datatables/jquery.dataTables.sorting.js"></script>
+    <!-- datatables bootstrap integration -->
+    <script src="lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
+    <!-- tables functions -->
+    <script src="assets/js/gebo_tables.js"></script>
+<script src="assets/js/gebo_datatables.js"></script>
+
+    <!-- sortable/filterable list -->
+  <script src="lib/list_js/list.min.js"></script>
+    <script src="lib/list_js/plugins/paging/list.paging.min.js"></script>
+    <script>
+    
+  //* filterable list
+  gebo_flist = {
+    init: function(){
+      //*typeahead
+      var list_source = [];
+      $('.user_list li').each(function(){
+        var search_name = $(this).find('.sl_name').text();
+        //var search_email = $(this).find('.sl_email').text();
+        list_source.push(search_name);
+      });
+      $('.user-list-search').typeahead({local: list_source, limit:5});
+      
+      var pagingOptions = {};
+      var options = {
+        valueNames: [ 'sl_name', 'sl_status', 'sl_email' ],
+        page: 10,
+        plugins: [
+          [ 'paging', {
+            pagingClass : "bottomPaging",
+            innerWindow: 1,
+                        outerWindow: 2
+          } ]
+        ]
+      };
+      var userList = new List('user-list', options);
+      
+      $('#filter-online').on('click',function() {
+        $('ul.filter li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        userList.filter(function(item) {
+          if (item.values().sl_status == "online") {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        return false;
+      });
+      $('#filter-offline').on('click',function() {
+        $('ul.filter li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        userList.filter(function(item) {
+          if (item.values().sl_status == "offline") {
+            return true;
+          } else {
+            return false;
+          }
+        });
+        return false;
+      });
+      $('#filter-none').on('click',function() {
+        $('ul.filter li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        userList.filter();
+        return false;
+      });
+      
+      $('#user-list').on('click','.sort',function(){
+          $('.sort').parent('li').removeClass('active');
+          if($(this).parent('li').hasClass('active')) {
+            $(this).parent('li').removeClass('active');
+          } else {
+            $(this).parent('li').addClass('active');
+          }
+        }
+      );
+    }
+  };
+
+  // User profile
+    $(document).ready(function() {
+    $("#array_tag_handler").tagHandler({
+        assignedTags: [ 'Tape', 'Power', 'DIN' ],
+        availableTags: [ 'Tape', 'Power', 'DIN', 'Cable', 'USB', 'GPS' ],
+        autocomplete: true
+    });  });
+  
+    </script>	
 
 		<!-- datatable -->
 		<script src="lib/datatables/jquery.dataTables.min.js"></script>
