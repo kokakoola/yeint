@@ -207,10 +207,8 @@
 					<div class="accordion-body collapse" id="collapseOne">
 						<div class="panel-body">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="javascript:void(0)">Articles</a></li>
-								<li><a href="javascript:void(0)">News</a></li>
-								<li><a href="javascript:void(0)">Newsletters</a></li>
-								<li><a href="javascript:void(0)">Comments</a></li>
+								<li><a href="javascript:void(0)">Product list</a></li>
+								<li><a href="product-add.html">Add Product</a></li>
 							</ul>
 						</div>
 					</div>
@@ -313,9 +311,6 @@
 <!-- mobile nav -->
 <script src="assets/js/selectNav.js"></script>
 
-<!-- common functions -->
-<script src="assets/js/gebo_common.js"></script>
-
   <!-- datatable -->
   <script src="lib/datatables/jquery.dataTables.min.js"></script>
   <!-- additional sorting for datatables -->
@@ -324,89 +319,46 @@
     <script src="lib/datatables/jquery.dataTables.bootstrap.min.js"></script>
     <!-- tables functions -->
     <script src="assets/js/gebo_tables.js"></script>
-<script src="assets/js/gebo_datatables.js"></script>
+    <script src="assets/js/gebo_datatables.js"></script>
 
-    <!-- sortable/filterable list -->
-  <script src="lib/list_js/list.min.js"></script>
-    <script src="lib/list_js/plugins/paging/list.paging.min.js"></script>
+    <!-- common functions -->
+    <script src="assets/js/gebo_common.js"></script>
+
     <script>
     
-  //* filterable list
-  gebo_flist = {
-    init: function(){
-      //*typeahead
-      var list_source = [];
-      $('.user_list li').each(function(){
-        var search_name = $(this).find('.sl_name').text();
-        //var search_email = $(this).find('.sl_email').text();
-        list_source.push(search_name);
-      });
-      $('.user-list-search').typeahead({local: list_source, limit:5});
-      
-      var pagingOptions = {};
-      var options = {
-        valueNames: [ 'sl_name', 'sl_status', 'sl_email' ],
-        page: 10,
-        plugins: [
-          [ 'paging', {
-            pagingClass : "bottomPaging",
-            innerWindow: 1,
-                        outerWindow: 2
-          } ]
-        ]
-      };
-      var userList = new List('user-list', options);
-      
-      $('#filter-online').on('click',function() {
-        $('ul.filter li').removeClass('active');
-        $(this).parent('li').addClass('active');
-        userList.filter(function(item) {
-          if (item.values().sl_status == "online") {
-            return true;
-          } else {
-            return false;
-          }
-        });
-        return false;
-      });
-      $('#filter-offline').on('click',function() {
-        $('ul.filter li').removeClass('active');
-        $(this).parent('li').addClass('active');
-        userList.filter(function(item) {
-          if (item.values().sl_status == "offline") {
-            return true;
-          } else {
-            return false;
-          }
-        });
-        return false;
-      });
-      $('#filter-none').on('click',function() {
-        $('ul.filter li').removeClass('active');
-        $(this).parent('li').addClass('active');
-        userList.filter();
-        return false;
-      });
-      
-      $('#user-list').on('click','.sort',function(){
-          $('.sort').parent('li').removeClass('active');
-          if($(this).parent('li').hasClass('active')) {
-            $(this).parent('li').removeClass('active');
-          } else {
-            $(this).parent('li').addClass('active');
-          }
-        }
-      );
-    }
-  };
 
-  // User profile
-    $(document).ready(function() {
+  // User profile Tags
+  $(document).ready(function() {
     $("#array_tag_handler").tagHandler({
         assignedTags: [ 'Tape', 'Power', 'DIN' ],
         availableTags: [ 'Tape', 'Power', 'DIN', 'Cable', 'USB', 'GPS' ],
         autocomplete: true
-    });  });
+    });  
+
+
+// how to use typeahead with server data: http://tosbourn.com/upgrading-from-bootstraps-typeahead-to-typeahead-js/
+    $('#productGroup').typeahead({
+    name: 'States',
+    local: ["Tallinn","Alaska","West Virginia","Wisconsin","Wyoming"]
+    });
+
+    $('#productBrand').typeahead({
+    name: 'Brand',
+    local: ["Tallinn","Alaska","West Virginia","Wisconsin","Wyoming"]
+    });
+
+$('#collapseOne').on('shown', function(){
+    $('#radio1').prop('checked', true);
+});
+
+$('#collapseTwo').on('shown', function(){
+    $('#radio2').prop('checked', true);
+});
+
+
+  });
+
+
   
     </script>
 

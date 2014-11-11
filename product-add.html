@@ -1,0 +1,415 @@
+<!-- @include includes/_head -->
+
+<body class="full_width">
+	<div id="maincontainer" class="clearfix">
+
+		<!-- @include includes/_header -->
+
+		<div id="contentwrapper">
+			<div class="main_content">
+				<div id="jCrumbs" class="breadCrumb module">
+					<ul>
+						<li>
+							<a href="#"><i class="glyphicon glyphicon-home"></i></a>
+						</li>
+						<li>
+							<a href="#">Product management</a>
+						</li>
+						<li>
+							Add Product
+						</li>
+					</ul>
+				</div>					                    	
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 class="heading">Add product</h1>
+
+						<div class="action-buttons pull-right">
+							<a href="javascript:history.go(-1);" class="btn btn-link">Cancel</a>
+							<a href="javascript:history.go(-1);" class="btn btn-link">Delete</a>
+							<a href="javascript:history.go(-1);" class="btn btn-default">Send to ERP</a>
+						</div>
+
+						<div class="clearfix"></div>
+
+						<form action="">
+							<div class="formSep"></div>
+							<div class="formSep">
+								<div class="row">
+									<div class="col-sm-6 form-divider">
+										<div class="form-group">
+											<label class="control-label" for="textinput1">Brand<span class="red">*</span></label>  
+											<input id="productBrand" data-provide="typeahead" name="Brand" type="text" class="form-control input-md" value="" placeholder="start writing">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput2">Part nr <span class="red">*</span></label>  
+											<input id="textinput2" name="textinput" type="text" class="form-control input-md" value="">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput3">YEID <span class="red">*</span></label>  
+											<input id="textinput3" name="textinput" type="text" class="form-control input-md" value="">
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="">Name <span class="red">*</span></label>  
+											<div class="tabbable">
+												<ul class="nav nav-tabs">
+													<li class="active"><a href="#tab1" data-toggle="tab">ENG-ENG</a></li>
+													<li><a href="#tab2" data-toggle="tab">ENG-EE</a></li>
+													<li><a href="#tab3" data-toggle="tab">ENG-LT</a></li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane active" id="tab1">
+														<input id="" name="textinput" type="text" class="form-control input-md" value="Lorup torup">
+													</div>
+													<div class="tab-pane" id="tab2">
+														<input id="" name="textinput" type="text" class="form-control input-md" value="Lorem Ipsum">
+													</div>
+													<div class="tab-pane" id="tab3">
+														<input id="" name="textinput" type="text" class="form-control input-md" value="Dolores est">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="textinput3"><a href="">Product group</a></label>  
+											<input id="productGroup" data-provide="typeahead" name="States" type="text" class="form-control input-md" value="" data-items="4" placeholder="Start writing">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										
+										<div class="form-group">
+											<label class="control-label" for="textinput3">Notes</label>
+											<textarea name="" class="form-control" id=""  rows="4"></textarea>
+										</div>
+										
+									  <div class="form-group">
+									    <label class="control-label">Replacements:</label>
+									    <div class="row">
+									      <div class="col-sm-8">
+									      	<p class="form-control-static">email@example.com</p>
+									      </div>
+									      <div class="col-sm-4">
+									      	<a href="#" class="btn btn-default btn-sm"><i class="fa fa-times"></i></a>
+									      </div>
+									    </div>
+									    <div class="row">
+									      <div class="col-sm-8">
+									      	<p class="form-control-static">email@example.com</p>
+									      </div>
+									      <div class="col-sm-4">
+									      	<a href="#" class="btn btn-default btn-sm"><i class="fa fa-times"></i></a>
+									      </div>
+									    </div>
+									    <div class="row">
+									      <div class="col-sm-8">
+									      	<p class="form-control-static">email@example.com</p>
+									      </div>
+									      <div class="col-sm-4">
+									      	<a href="#" class="btn btn-default btn-sm"><i class="fa fa-times"></i></a>
+									      </div>
+									    </div>
+									    <div class="row">
+									      <div class="col-sm-8">
+									      	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+									      </div>
+									      <div class="col-sm-4">
+									      	<a href="#" class="btn btn-primary btn-sm"><i class="fa fa-check"></i></a>
+									      	<a href="#" class="btn btn-default btn-sm"><i class="fa fa-times"></i></a>
+									      	<a href="#" class="btn btn-primary btn-sm">Add</a>
+									      </div>
+									    </div>
+									  </div>
+										<div class="form-group">
+											<label for="checkbox-input"><strong>The product is discontinued</strong> &nbsp;&nbsp;</label>
+											<input type="checkbox" id="checkbox-input" checked="checked">
+										</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-12">
+									<div class="tabbable">
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#tab4" data-toggle="tab">Product</a></li>
+											<li><a href="#tab5" data-toggle="tab">Suppliers</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane " id="tab4">
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label class="control-label" for="">Name</label>  
+														<div class="tabbable">
+															<ul class="nav nav-tabs">
+																<li class="active"><a href="#tab6" data-toggle="tab">ENG-ENG</a></li>
+																<li><a href="#tab7" data-toggle="tab">ENG-EE</a></li>
+																<li><a href="#tab8" data-toggle="tab">ENG-LT</a></li>
+															</ul>
+															<div class="tab-content">
+																<div class="tab-pane active" id="tab6">
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="Lorup torup">
+																</div>
+																<div class="tab-pane" id="tab7">
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="Lorem Ipsum">
+																</div>
+																<div class="tab-pane" id="tab8">
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="Dolores est">
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="control-label" for="">CN8 </label>  
+														<input id="" name="textinput" type="text" class="form-control input-md" value="">
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<label class="control-label" for="">Package dimensions (L x W x H) </label>  
+														<div class="row">
+															<div class="col-sm-3">
+																<input id="" name="textinput" type="text" class="form-control input-md" value="" placeholder="Length">
+															</div>
+															<div class="col-sm-3">
+																<input id="" name="textinput" type="text" class="form-control input-md" value="" placeholder="Width">
+															</div>
+															<div class="col-sm-3">
+																<input id="" name="textinput" type="text" class="form-control input-md" value="" placeholder="Height">
+															</div>
+															<div class="col-sm-3">
+																<p class="form-control-static">(mm)</p>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-3">
+																<div class="form-group">
+																	<label class="control-label" for="">Package</label>  
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															<div class="col-sm-3">
+																<div class="form-group">
+																	<label class="control-label" for=""><a href="#">Unit</a></label>  
+																	<select id="" class="form-control">
+															      <option>Pcs</option>
+															    </select>
+																</div>
+															</div>
+															<div class="col-sm-3">
+																<div class="form-group">
+																	<label class="control-label" for="">Weight (kg)</label>  
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															<div class="col-sm-3">
+																<div class="form-group">
+																	<label class="control-label" for="">Weight with box (kg)</label>  
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-sm-3">
+																<div class="form-group">
+																	<label class="control-label" for="">Min rate of sales</label>  
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															<div class="col-sm-3">
+																<div class="form-group">
+																	<label class="control-label" for="">Special transport</label>  
+																	<select id="" class="form-control">
+															      <option>No</option>
+															    </select>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="control-label" for="">Barcode</label>  
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											<div class="tab-pane active" id="tab5">
+												<div class="row">
+													<div class="col-sm-6 form-divider">
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="form-group">
+																	<label class="control-label" for=""><a href="">Supplier</a> </label>
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+																<div class="form-group">
+																	<label class="control-label" for="">ERP Code</label>  
+																	<div class="tabbable">
+																		<ul class="nav nav-tabs">
+																			<li class="active"><a href="#tab9" data-toggle="tab">ET</a></li>
+																			<li><a href="#tab10" data-toggle="tab">LT</a></li>
+																			<li><a href="#tab11" data-toggle="tab">LIT</a></li>
+																		</ul>
+																		<div class="tab-content">
+																			<div class="tab-pane active" id="tab9">
+																				<input id="" name="textinput" type="text" class="form-control input-md" value="123">
+																			</div>
+																			<div class="tab-pane" id="tab10">
+																				<input id="" name="textinput" type="text" class="form-control input-md" value="456">
+																			</div>
+																			<div class="tab-pane" id="tab11">
+																				<input id="" name="textinput" type="text" class="form-control input-md" value="789">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+
+															<div class="col-sm-6 accordion">
+																<br>
+
+																<div id="radioGroup">
+																	<label >
+																		<input type="radio" name="" id="radio1" value="option1"  data-toggle="collapse" data-parent="#radioGroup" href="#collapseOne" checked> Use same order code for all quantities
+																	</label>
+																	<br>
+																	
+																	<label >
+																		<input type="radio" name="" id="radio2" value="option2"  data-toggle="collapse" data-parent="#radioGroup" href="#collapseTwo"> Use different order codes
+																	</label>
+																</div>
+																<br><br>
+																
+															</div>
+														</div>
+														<div class="row">
+															<div id="moreFields" class="collapse">
+																<div class="col-sm-4">
+																	<div class="form-group">
+																		<label class="control-label" for="">Delivery time </label>
+																		<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																	</div>
+																</div>
+																<div class="col-sm-4">
+																	<div class="form-group">
+																		<label class="control-label" for="">Factory delivery time </label>
+																		<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																	</div>
+																</div>
+																<div class="col-sm-4">
+																	<div class="form-group">
+																		<label class="control-label" for="">Supplier stock situation </label>
+																		<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																	</div>
+																</div>
+																<div class="col-sm-12">
+																	<div class="form-group">
+																		<label class="control-label" for="">Supplier category </label>
+																		<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																	</div>
+																</div>
+																<div class="formSep"></div>
+															</div>
+															<div class="col-sm-12 text-right">
+																<button type="button" class="btn btn-default" data-toggle="collapse" data-target="#moreFields" aria-expanded="true" aria-controls="demo">Show more fields</button>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-6" id="collapseOne">
+														<div class="form-group" >
+																	<label class="control-label" for="">Order code </label>
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+													</div>
+													<div class="col-sm-6 collapse" id="collapseTwo">
+														<label class="control-label" for="">Purchase prices</label>
+														<div class="row" class="form-horizontal">
+															<div class="col-sm-3">
+																<br>
+																<label class="control-label col-sm-4" for="">Qty1</label>
+																<div class="col-sm-8">
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															<div class="col-sm-3">
+																<br>
+																<label class="control-label col-sm-4" for="">Price1</label>
+																<div class="col-sm-8">
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															<div class="col-sm-2">
+																<br>
+																<input id="" name="textinput" type="text" class="form-control input-md" value="">
+															</div>
+															<div class="col-sm-4">
+																<div class="form-group">
+																	<label class="control-label" for="">Order code </label>
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="" placeholder="Order code">
+																</div>
+															</div>
+														</div>
+														<div class="row" class="form-horizontal">
+															<div class="col-sm-3">
+																<br>
+																<label class="control-label col-sm-4" for="">Qty2</label>
+																<div class="col-sm-8">
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															<div class="col-sm-3">
+																<br>
+																<label class="control-label col-sm-4" for="">Price2</label>
+																<div class="col-sm-8">
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="">
+																</div>
+															</div>
+															<div class="col-sm-2">
+																<br>
+																<input id="" name="textinput" type="text" class="form-control input-md" value="">
+															</div>
+															<div class="col-sm-4">
+																<div class="form-group">
+																	<label class="control-label" for="">Order code </label>
+																	<input id="" name="textinput" type="text" class="form-control input-md" value="" placeholder="Order code">
+																</div>
+															</div>
+															<div class="col-sm-12 text-right">
+																<button type="button" class="btn btn-primary">Add another quantity</button>
+															</div>
+														</div>
+													</div>
+													
+
+												</div>
+											</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								
+								</div>
+
+							</div>
+							<div class="col-sm-12 text-right">
+							<button type="button" class="btn btn-primary">Add another supplier</button>
+						</div>
+						</form>
+
+					</div>
+				</div>                
+			</div>
+		</div>
+
+		<!-- @include includes/_sidebar -->
+
+		<!-- @include includes/_js -->
+
+	</div>
+</body>
+</html>
